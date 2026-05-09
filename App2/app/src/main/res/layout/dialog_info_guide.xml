@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView android:layout_width="36dp" android:layout_height="36dp"
+                android:src="@drawable/ic_splash_logo" android:layout_marginEnd="12dp"/>
+
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="SHIFT-SPEND\nINFO GUIDE"
+                android:textColor="@color/gold" android:textSize="16sp" android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btn_close_info"
+                android:layout_width="32dp" android:layout_height="32dp"
+                android:background="@drawable/bg_wear_alert"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@color/white" android:padding="6dp"/>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@drawable/divider_gold" android:layout_marginBottom="16dp"/>
+
+        <!-- Feature 1 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🚗  HEALTH DASHBOARD"
+            android:textColor="@color/gold" android:textSize="13sp" android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="The car wireframe on the home screen pulses RED when a part needs attention and GOLD when everything is running well. Tap the ⓘ icon for a breakdown by part."
+            android:textColor="@color/text_secondary" android:textSize="13sp"
+            android:lineSpacingMultiplier="1.5" android:layout_marginBottom="16dp"/>
+
+        <!-- Feature 2 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="➕  LOGGING EXPENSES"
+            android:textColor="@color/gold" android:textSize="13sp" android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tap the gold + FAB button to log any expense: Fuel, Parts, Repairs, or Oil Changes. Choose your vehicle and add a note."
+            android:textColor="@color/text_secondary" android:textSize="13sp"
+            android:lineSpacingMultiplier="1.5" android:layout_marginBottom="16dp"/>
+
+        <!-- Feature 3 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="📊  ANALYTICS VIEW"
+            android:textColor="@color/gold" android:textSize="13sp" android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="The Analytics screen shows a Pie Chart breakdown of Fuel vs Parts vs Repairs, a Bar Chart of monthly trends, and a scrollable log history."
+            android:textColor="@color/text_secondary" android:textSize="13sp"
+            android:lineSpacingMultiplier="1.5" android:layout_marginBottom="16dp"/>
+
+        <!-- Feature 4 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⚙️  SETTINGS"
+            android:textColor="@color/gold" android:textSize="13sp" android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Open Settings via the ⚙ icon. Switch vehicles (Sedan / Bike), toggle currency (AED ↔ USD), toggle distance units (KM ↔ Miles), and set reminder preferences. All settings save automatically."
+            android:textColor="@color/text_secondary" android:textSize="13sp"
+            android:lineSpacingMultiplier="1.5" android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btn_got_it"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="GOT IT — LET'S DRIVE"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/bg_login_btn"/>
+
+    </LinearLayout>
+</ScrollView>

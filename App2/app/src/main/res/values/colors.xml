@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core palette -->
+    <color name="black">#000000</color>
+    <color name="surface">#0D0D0D</color>
+    <color name="surface_card">#161616</color>
+    <color name="surface_elevated">#1F1F1F</color>
+    <color name="crimson">#DC143C</color>
+    <color name="crimson_dark">#9C0028</color>
+    <color name="gold">#FFD700</color>
+    <color name="gold_dark">#B89400</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#F0F0F0</color>
+    <color name="text_secondary">#9A9A9A</color>
+    <color name="text_muted">#555555</color>
+    <color name="divider">#1E1E1E</color>
+    <color name="overlay">#80000000</color>
+    <color name="gold_alpha">#33FFD700</color>
+    <color name="crimson_alpha">#33DC143C</color>
+</resources>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:background="@color/black"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_more"
+            android:tint="@color/gold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SHIFT-SPEND"
+            android:textColor="@color/gold"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_preferences"
+            android:tint="@color/gold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="100dp">
+
+            <LinearLayout
+                android:id="@+id/card_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CURRENT TRACKING:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="9sp"
+                        android:letterSpacing="0.18"/>
+                    <TextView
+                        android:id="@+id/tv_vehicle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DAILY SEDAN"
+                        android:textColor="@color/text_primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Spent\nThis Month:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="10sp"
+                        android:gravity="end"/>
+                    <TextView
+                        android:id="@+id/tv_total_spend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1,450 AED"
+                        android:textColor="@color/gold"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Card with New 3D Image & Live Alerts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEAR ALERTS"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"/>
+
+                <!-- 3D CAR DISPLAY AREA -->
+                <ImageView
+                    android:id="@+id/iv_car_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginVertical="8dp"
+                    android:src="@drawable/car_wireframe"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Vehicle Status Monitor" />
+
+                <!-- DYNAMIC PART ALERTS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/iv_tire_indicator"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_wear_alert"
+                            android:src="@drawable/ic_tire"
+                            android:padding="6dp"/>
+                        <TextView
+                            android:id="@+id/tv_tire_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Tires: Needs replacement"
+                            android:textColor="@color/crimson"
+                            android:textSize="10sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/iv_engine_indicator"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_wear_ok"
+                            android:src="@drawable/ic_engine"
+                            android:padding="6dp"/>
+                        <TextView
+                            android:id="@+id/tv_engine_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Engine: Due soon"
+                            android:textColor="@color/gold"
+                            android:textSize="10sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEXT SERVICE DUE:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:id="@+id/tv_next_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="250 KM"
+                        android:textColor="@color/text_primary"
+                        android:textSize="28sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_log_fuel"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:text="LOG FUEL"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bg_login_btn"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_view_analytics"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:text="VIEW EXPENSE ANALYTICS →"
+                android:textColor="@color/gold"
+                android:background="@drawable/bg_card_crimson"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/gold"
+        app:tint="@color/black"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

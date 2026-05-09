@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="160dp"
+    android:viewportWidth="300"
+    android:viewportHeight="160">
+
+    <!-- Car body outline -->
+    <path
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="
+        M20,110 L30,110 C30,100 35,95 48,95 C61,95 66,100 66,110
+        L110,110 L110,100 L120,85 L140,70 L180,65 L220,68
+        L250,75 L265,88 L270,100 L270,110
+        L280,110 C280,100 285,95 250,95 C245,95 250,100 250,110
+        L270,110 L280,110 L285,110 L285,100 L280,88
+        L265,75 L248,65 L220,60 L175,58 L140,62
+        L115,72 L100,88 L85,98 L20,100 Z"/>
+
+    <!-- Roof -->
+    <path
+        android:strokeColor="#DC143C"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"
+        android:pathData="M120,85 L140,70 L180,65 L220,68 L250,75 L265,88 L250,85 L220,78 L180,75 L145,78 L128,90 Z"/>
+
+    <!-- Window lines -->
+    <path
+        android:strokeColor="#9A9A9A"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:pathData="M130,88 L145,78 L180,75 L212,78 L225,86"/>
+
+    <!-- Wheel arches -->
+    <path
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M30,110 C30,100 35,95 48,95 C61,95 66,100 66,110"/>
+    <path
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M232,110 C232,100 237,95 250,95 C263,95 268,100 268,110"/>
+
+    <!-- Wheels -->
+    <path android:fillColor="#1A1A1A" android:strokeColor="#FFD700" android:strokeWidth="2"
+        android:pathData="M48,110m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M48,110m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+
+    <path android:fillColor="#1A1A1A" android:strokeColor="#FFD700" android:strokeWidth="2"
+        android:pathData="M250,110m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M250,110m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+
+    <!-- Headlight -->
+    <path android:fillColor="#FFD700" android:strokeColor="#FFD700" android:strokeWidth="0.5"
+        android:pathData="M275,90 L285,95 L283,100 L273,97 Z"/>
+
+    <!-- Tail light -->
+    <path android:fillColor="#DC143C" android:strokeColor="#DC143C" android:strokeWidth="0.5"
+        android:pathData="M22,95 L20,100 L28,102 L28,96 Z"/>
+</vector>

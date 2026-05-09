@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main App Theme (Dark Mode/Professional) -->
+    <style name="Theme.ShiftSpend" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/crimson</item>
+        <item name="colorPrimaryVariant">@color/crimson_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Splash Screen Theme (Required for installSplashScreen()) -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">1200</item>
+        <item name="postSplashScreenTheme">@style/Theme.ShiftSpend</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="ShiftCard">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Gold button -->
+    <style name="GoldButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/gold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Crimson button -->
+    <style name="CrimsonButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/crimson</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Outline button -->
+    <style name="OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/gold</item>
+        <item name="android:textColor">@color/gold</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Dialog (Dark Glass) -->
+    <style name="DarkGlassDialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="colorPrimary">@color/gold</item>
+    </style>
+
+</resources>
