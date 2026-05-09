@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Cauldron legs -->
+    <path
+        android:fillColor="#2A2A2A"
+        android:pathData="M 65,165 L 55,190 L 70,190 L 75,165 Z" />
+    <path
+        android:fillColor="#2A2A2A"
+        android:pathData="M 135,165 L 130,190 L 145,190 L 135,165 Z" />
+    <path
+        android:fillColor="#2A2A2A"
+        android:pathData="M 100,168 L 95,190 L 105,190 L 100,168 Z" />
+
+    <!-- Cauldron body shadow -->
+    <ellipse
+        android:fillColor="#111111"
+        cx="100"
+        cy="150"
+        rx="60"
+        ry="10" />
+
+    <!-- Cauldron body -->
+    <path
+        android:fillColor="#1C1C1C"
+        android:pathData="M 40,120 Q 40,170 100,170 Q 160,170 160,120 L 155,80 Q 155,70 100,70 Q 45,70 45,80 Z" />
+
+    <!-- Cauldron rim -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M 40,80 Q 40,95 100,95 Q 160,95 160,80 Q 160,65 100,65 Q 40,65 40,80 Z" />
+
+    <!-- Cauldron rim highlight -->
+    <path
+        android:fillColor="#555555"
+        android:pathData="M 45,78 Q 45,88 100,88 Q 155,88 155,78 Q 155,68 100,68 Q 45,68 45,78 Z" />
+
+    <!-- Cauldron handles -->
+    <path
+        android:fillColor="#444444"
+        android:strokeColor="#555555"
+        android:strokeWidth="3"
+        android:pathData="M 40,85 Q 20,85 20,100 Q 20,115 40,115" />
+    <path
+        android:fillColor="#444444"
+        android:strokeColor="#555555"
+        android:strokeWidth="3"
+        android:pathData="M 160,85 Q 180,85 180,100 Q 180,115 160,115" />
+
+    <!-- Cauldron liquid (tintable - this is what changes color) -->
+    <path
+        android:fillColor="#1A6B1A"
+        android:pathData="M 50,105 Q 50,155 100,155 Q 150,155 150,105 Q 125,115 100,112 Q 75,115 50,105 Z"
+        android:name="liquid" />
+
+    <!-- Bubble 1 -->
+    <circle
+        android:fillColor="#2ECC40"
+        cx="80"
+        cy="98"
+        r="6" />
+
+    <!-- Bubble 2 -->
+    <circle
+        android:fillColor="#27AE60"
+        cx="110"
+        cy="93"
+        r="8" />
+
+    <!-- Bubble 3 -->
+    <circle
+        android:fillColor="#2ECC40"
+        cx="130"
+        cy="99"
+        r="5" />
+
+    <!-- Steam lines -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#AAFFAA"
+        android:strokeWidth="2.5"
+        android:pathData="M 80,65 Q 75,50 80,35 Q 85,20 80,10" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#AAFFAA"
+        android:strokeWidth="2.5"
+        android:pathData="M 100,62 Q 95,47 100,32 Q 105,17 100,7" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#AAFFAA"
+        android:strokeWidth="2.5"
+        android:pathData="M 120,65 Q 115,50 120,35 Q 125,20 120,10" />
+
+</vector>

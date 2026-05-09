@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Scaling and centering the entire design into the 66dp safe zone -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.65"
+        android:scaleY="0.65">
+
+        <!-- Gold outer ring -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFD700"
+            android:strokeWidth="2"
+            android:pathData="M54,54m-46,0a46,46 0,1 1,92 0a46,46 0,1 1,-92 0" />
+
+        <!-- Cauldron body -->
+        <path
+            android:fillColor="#1C1C1C"
+            android:pathData="M33,63 Q33,78 54,78 Q75,78 75,63 L73,50 Q73,45 54,45 Q35,45 35,50 Z" />
+
+        <!-- Rim -->
+        <path
+            android:fillColor="#444444"
+            android:pathData="M33,50 Q33,57 54,57 Q75,57 75,50 Q75,43 54,43 Q33,43 33,50 Z" />
+
+        <!-- Rim highlight -->
+        <path
+            android:fillColor="#666666"
+            android:pathData="M35,49 Q35,55 54,55 Q73,55 73,49 Q73,44 54,44 Q35,44 35,49 Z" />
+
+        <!-- Liquid -->
+        <path
+            android:fillColor="#1A6B1A"
+            android:pathData="M37,57 Q37,73 54,73 Q71,73 71,57 Q63,62 54,60 Q45,62 37,57 Z" />
+
+        <!-- Liquid gloss -->
+        <path
+            android:fillColor="#2ECC40"
+            android:pathData="M37,57 Q45,62 54,60 Q63,62 71,57 Q63,52 54,54 Q45,52 37,57 Z" />
+
+        <!-- Bubbles -->
+        <circle android:fillColor="#66FF44" cx="46" cy="51" r="3" />
+        <circle android:fillColor="#44DD22" cx="56" cy="48" r="3.5" />
+        <circle android:fillColor="#66FF44" cx="65" cy="52" r="2.5" />
+
+        <!-- Steam lines -->
+        <path
+            android:strokeColor="#88FFAA"
+            android:strokeWidth="2"
+            android:fillColor="#00000000"
+            android:pathData="M46,42 Q43,35 46,28 Q49,22 46,17" />
+        <path
+            android:strokeColor="#88FFAA"
+            android:strokeWidth="2"
+            android:fillColor="#00000000"
+            android:pathData="M54,41 Q51,34 54,27 Q57,21 54,16" />
+        <path
+            android:strokeColor="#88FFAA"
+            android:strokeWidth="2"
+            android:fillColor="#00000000"
+            android:pathData="M62,42 Q59,35 62,28 Q65,22 62,17" />
+
+        <!-- Legs -->
+        <path android:fillColor="#2A2A2A" android:pathData="M40,76 L37,85 L43,85 L44,76 Z" />
+        <path android:fillColor="#2A2A2A" android:pathData="M68,76 L65,85 L71,85 L68,76 Z" />
+        <path android:fillColor="#2A2A2A" android:pathData="M54,77 L52,85 L56,85 L54,77 Z" />
+
+        <!-- Gold stars -->
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M20,22 L21.5,26.5 L26,26.5 L22.5,29 L24,33.5 L20,31 L16,33.5 L17.5,29 L14,26.5 L18.5,26.5 Z" />
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M88,22 L89.5,26.5 L94,26.5 L90.5,29 L92,33.5 L88,31 L84,33.5 L85.5,29 L82,26.5 L86.5,26.5 Z" />
+    </group>
+</vector>

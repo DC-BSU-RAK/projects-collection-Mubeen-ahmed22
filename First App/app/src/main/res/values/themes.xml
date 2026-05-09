@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base app theme: Set to match your new namespace if needed -->
+    <style name="Theme.Cauldron" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color (Deep Purple/Black) -->
+        <item name="colorPrimary">#1A0A2E</item>
+        <item name="colorPrimaryVariant">#2D1B4E</item>
+        <item name="colorOnPrimary">#FFD700</item> <!-- Gold text/icons -->
+
+        <!-- Secondary brand color (Gold) -->
+        <item name="colorSecondary">#FFD700</item>
+        <item name="colorOnSecondary">#1A0A2E</item>
+
+        <!-- UI Colors -->
+        <item name="android:windowBackground">#1A0A2E</item>
+        <item name="android:statusBarColor">#0D0520</item>
+        <item name="android:navigationBarColor">#0D0520</item>
+    </style>
+
+    <!-- Splash screen theme: fullscreen, no status bar -->
+    <style name="Theme.Cauldron.Splash" parent="Theme.Cauldron">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Ensure bg_splash exists in your drawable folder -->
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:statusBarColor">#07021A</item>
+        <item name="android:navigationBarColor">#07021A</item>
+    </style>
+
+    <!-- Parchment dialog style: Fixed to ensure it clears the background properly -->
+    <style name="ParchmentDialog" parent="Theme.MaterialComponents.Dialog">
+        <!-- This allows your XML layout's background to show its shape (rounded corners) -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">#8B6914</item>
+    </style>
+
+</resources>

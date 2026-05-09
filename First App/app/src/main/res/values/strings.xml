@@ -1,0 +1,50 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">Cauldron</string>
+
+    <!-- Ingredients -->
+    <string name="phoenix_feather">Phoenix\nFeather</string>
+    <string name="mandrake_root">Mandrake\nRoot</string>
+    <string name="moonstone_powder">Moonstone\nPowder</string>
+    <string name="dragon_scale">Dragon\nScale</string>
+    <string name="nightshade">Nightshade</string>
+    <string name="wolfsbane">Wolfsbane</string>
+    <string name="mermaid_tear">Mermaid\nTear</string>
+    <string name="unicorn_hair">Unicorn\nHair</string>
+    <string name="boomslang_skin">Boomslang\nSkin</string>
+    <string name="salamander_blood">Salamander\nBlood</string>
+    <string name="bezoar">Bezoar</string>
+    <string name="dittany">Dittany</string>
+
+    <!-- Potions -->
+    <string name="brew">BREW ⚗</string>
+    <string name="dissolve">DISSOLVE ↺</string>
+    <string name="instructions">?</string>
+
+    <!-- Modal -->
+    <string name="modal_title">📜 Potion Brewing Guide</string>
+    <string name="modal_instructions">
+        Welcome, young witch or wizard!\n\n
+        🧪 HOW TO BREW:\n
+        Tap ingredients below the cauldron to add them to your mixture. The order matters — choose wisely!\n\n
+        ⚗ BREW:\n
+        When ready, press BREW to test your combination. A successful recipe will transform the cauldron!\n\n
+        ↺ DISSOLVE:\n
+        Press DISSOLVE to clear the cauldron and start fresh.\n\n
+        ⚠ SAFETY TIPS:\n
+        • Never mix Dragon Scale with Mermaid Tear without a Bezoar antidote nearby.\n
+        • Nightshade fumes are highly toxic — ensure good ventilation.\n
+        • Wolfsbane must be properly prepared or it becomes poisonous.\n
+        • Always stir counter-clockwise when adding Unicorn Hair.\n\n
+        📖 KNOWN RECIPES:\n
+        • Liquid Luck: Moonstone + Phoenix Feather\n
+        • Draught of Living Death: Nightshade + Wolfsbane + Bezoar\n
+        • Veritaserum: Mermaid Tear + Unicorn Hair + Moonstone\n
+        • Elixir of Life: Dragon Scale + Phoenix Feather + Salamander Blood\n
+        • Polyjuice Potion: Mandrake Root + Boomslang Skin + Dittany\n
+        • Amortentia: Mermaid Tear + Dittany + Unicorn Hair\n\n
+        May your brews be ever potent! 🌟
+    </string>
+    <string name="close">CLOSE</string>
+
+</resources>

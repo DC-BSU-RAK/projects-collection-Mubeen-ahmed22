@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_parchment"
+    android:padding="24dp">
+
+    <!-- Decorative top line -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚜ ─────────────────── ⚜"
+        android:textColor="#8B6914"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:fontFamily="serif" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="📜 Potion Brewing Guide"
+        android:textColor="#3E1F00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="serif" />
+
+    <!-- Decorative bottom line -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="⚜ ─────────────────── ⚜"
+        android:textColor="#8B6914"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:fontFamily="serif" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧪 HOW TO BREW"
+                android:textColor="#3E1F00"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap ingredients below the cauldron to add them to your mixture. The order matters — choose wisely!"
+                android:textColor="#5C3A1E"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚗ BREW"
+                android:textColor="#3E1F00"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When ready, press BREW to test your combination. A successful recipe will transform the cauldron and reveal the potion!"
+                android:textColor="#5C3A1E"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚠ SAFETY TIPS"
+                android:textColor="#8B0000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Never mix Dragon Scale with Mermaid Tear without a Bezoar antidote nearby.\n• Nightshade fumes are highly toxic.\n• Wolfsbane must be properly prepared.\n• Stir counter-clockwise when adding Unicorn Hair."
+                android:textColor="#5C3A1E"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📖 KNOWN RECIPES"
+                android:textColor="#3E1F00"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ Liquid Luck\n   Moonstone + Phoenix Feather\n\n💀 Draught of Living Death\n   Nightshade + Wolfsbane + Bezoar\n\n💫 Veritaserum\n   Mermaid Tear + Unicorn Hair + Moonstone\n\n♾ Elixir of Life\n   Dragon Scale + Phoenix Feather + Salamander Blood\n\n🧬 Polyjuice Potion\n   Mandrake Root + Boomslang Skin + Dittany\n\n💕 Amortentia\n   Mermaid Tear + Dittany + Unicorn Hair"
+                android:textColor="#5C3A1E"
+                android:textSize="12sp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#8B6914" />
+
+    <!-- Close button -->
+    <Button
+        android:id="@+id/btnCloseDialog"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="CLOSE THE SCROLL"
+        android:textColor="#F5DEB3"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:letterSpacing="0.1"
+        android:backgroundTint="#6B4226"
+        android:fontFamily="serif" />
+
+</LinearLayout>
